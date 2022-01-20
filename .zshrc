@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/vauvelle/.oh-my-zsh"
+export ZSH="/home/$USER/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -69,15 +69,15 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
-export ZSH=/home/vauvelle/.oh-my-zsh
+export ZSH=/home/$USER/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 unset SSH_ASKPASS
 # User configuration
 ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_MODE="awesome-patched"
 DEFAULT_USER=$USER
-. /home/vauvelle/.tools/z.sh
-source /share/apps/source_files/python/python-3.7.2.source
+. /home/$USER/.tools/z/z.sh
+# source /share/apps/source_files/python/python-3.7.2.source
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -99,5 +99,5 @@ source /share/apps/source_files/python/python-3.7.2.source
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source /home/vauvelle/miniconda3/bin/activate
-export PATH=/home/vauvelle/mongodb-4.4.4/bin:$PATH
+source /home/$USER/miniconda3/bin/activate
+export PATH=/home/$USER/mongodb-4.4.4/bin:$PATH
