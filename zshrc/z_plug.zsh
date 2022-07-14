@@ -12,6 +12,7 @@ zplug "zsh-users/zsh-completions", defer:2
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
 zplug mafredri/zsh-async, from:github
+zplug "spaceship-prompt/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -22,4 +23,8 @@ if ! zplug check --verbose; then
 fi
 # Then, source plugins and add commands to $PATH
 #zplug load --verbose
-zplug load
+zplug load 
+
+
+# Starship theme
+eval "$(starship init zsh)"
