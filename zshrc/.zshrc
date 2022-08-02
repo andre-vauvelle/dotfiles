@@ -1,6 +1,5 @@
 source ~/.dotfiles/zshrc/env.zsh
 source ~/.dotfiles/zshrc/base_aliases.zsh
-source ~/.dotfiles/zshrc/BAI_aliases.zsh
 source ~/.dotfiles/zshrc/z_plug.zsh
 source ~/.dotfiles/zshrc/git.zsh
 source ~/.dotfiles/zshrc/tmux.zsh

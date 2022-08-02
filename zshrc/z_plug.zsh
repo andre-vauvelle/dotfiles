@@ -15,11 +15,9 @@ zplug mafredri/zsh-async, from:github
 zplug "spaceship-prompt/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 
 # Install plugins if there are plugins that have not been installed
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
+if ! zplug check --verbose; 
+    printf "Installing... zplug zplugins "
+    zplug install
 fi
 # Then, source plugins and add commands to $PATH
 #zplug load --verbose
