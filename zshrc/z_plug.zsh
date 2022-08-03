@@ -15,7 +15,7 @@ zplug mafredri/zsh-async, from:github
 zplug "spaceship-prompt/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 
 # Install plugins if there are plugins that have not been installed
-zplug install
+# zplug install
 
 # Then, source plugins and add commands to $PATH
 zplug load #--verbose
