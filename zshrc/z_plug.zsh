@@ -21,4 +21,4 @@ zplug install
 zplug load #--verbose
 
 # Starship theme
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
