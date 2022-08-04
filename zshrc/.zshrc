@@ -1,6 +1,7 @@
 source ~/.dotfiles/zshrc/env.zsh
 source ~/.dotfiles/zshrc/base_aliases.zsh
-source ~/.dotfiles/zshrc/z_plug.zsh
+#source ~/.dotfiles/zshrc/z_plug.zsh
+source ~/.dotfiles/zshrc/antigen.zsh
 source ~/.dotfiles/zshrc/git.zsh
 source ~/.dotfiles/zshrc/tmux.zsh
 source ~/.dotfiles/zshrc/secrets.zsh
