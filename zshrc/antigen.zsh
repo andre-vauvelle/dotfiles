@@ -11,6 +11,7 @@ antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle git
 antigen bundle pip
 antigen bundle command-not-found
+antigen bundle agkozak/zsh-z
 
 
 
