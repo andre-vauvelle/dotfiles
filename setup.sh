@@ -6,4 +6,5 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 
 ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/zshrc/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/starship.toml ~/.config/starship.toml
 
