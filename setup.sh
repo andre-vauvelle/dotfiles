@@ -4,7 +4,7 @@ curl -sS https://starship.rs/install.sh | sh
 # Install zplug
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 # Install pathogen
-mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+pkdir -p ~/.vim/autoload ~/.vim/bundle && \
     curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 # Vim pathogen bundles
 git clone https://github.com/preservim/nerdtree.git ~/.vim/bundle/nerdtree
