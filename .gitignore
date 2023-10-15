@@ -1,0 +1,5 @@
+zshrc/env_private.zsh
+zshrc/dexter_aliases.zsh
+*.swo
+*.swp
+

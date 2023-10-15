@@ -1,4 +1,5 @@
 # Some useful shortcuts
+alias la="ls -altr"
 alias -- -="cd -"
 alias ..="cd ../"
 alias ...="cd ../../"
