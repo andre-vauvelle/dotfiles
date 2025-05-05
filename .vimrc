@@ -22,3 +22,8 @@ noremap <leader>h <C-w>h
 " For opening vimrc
 nmap <leader>0s :source ~/.vimrc<CR>
 nmap <leader>0o :edit ~/.vimrc<CR>
+
+" System clipboard
+vnoremap <C-c> :w !pbcopy<CR><CR> noremap <C-v> :r !pbpaste<CR><CR>
+ 
+

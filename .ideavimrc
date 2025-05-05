@@ -6,10 +6,11 @@ set shiftwidth=4
 set expandtab
 set number
 set ideajoin
+" Upper case marks are visible
 set ideamarks
 set ideaput
 set incsearch
-set scrolloff=5
+set scrolloff=0 " Use 0 for jupyter notebooks in pycharm, stops bad scrolling behavior
 Plug 'preservim/nerdtree'
 Plug 'machakann/vim-highlightedyank'
 Plug 'dbakker/vim-paragraph-motion'
@@ -76,6 +77,8 @@ nmap <leader><space> :action ChooseRunConfiguration<CR>
 nmap <leader>d :action ChooseDebugConfiguration<CR>
 nmap <leader><a-char-62> :action Resume<CR>
 nmap <leader>D :action Resume<CR>
+nmap <leader>so :action StepOver<CR>
+nmap <leader>si :action StepIn<CR>
 nmap <leader>b :action ToggleLineBreakpoint<CR>
 nmap <leader>f :action QuickJavaDoc<CR>
 nmap <leader>m :action GotoDeclaration<CR>
@@ -112,9 +115,17 @@ nmap mf :action NewFile<CR>
 nmap md :action NewDir<CR>
 nmap <leader>ro :action ToggleReadOnlyAttribute<CR>
 " Copilot
-nmap <Space>\ <Action>(copilot.requestCompletions)
-nmap <Space>] <Action>(copilot.cycleNextInlays)
-nmap <Space>[ <Action>(copilot.cyclePrevInlays)
-nmap <Space>c <Action>(copilot.openCopilot)
+nmap <leader>\ <Action>(copilot.requestCompletions)
+nmap <leader>] <Action>(copilot.cycleNextInlays)
+nmap <leader>[ <Action>(copilot.cyclePrevInlays)
+nmap <leader>c <Action>(copilot.openCopilot)
 " 1}}}
 
+" zo: Open one fold under the cursor. When a count is given, that many folds deep will be opened.
+nmap zo zo
+" zc: Close one fold under the cursor. When a count is given, that many folds deep are closed.
+nmap zc zc
+" zM: Close all folds
+nmap zC zM
+" zR: Open all folds.
+nmap zO zR
