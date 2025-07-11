@@ -8,6 +8,7 @@ source "$HOME/.rye/env"
 source "$HOME/.cargo/env"
 
 export PLOTLY_RENDERER=chrome
+export DISABLE_TELEMETRY=1
 
 
 
