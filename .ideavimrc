@@ -19,6 +19,16 @@ Plug 'tpope/vim-commentary'
 
 let mapleader=","
 
+" Show current mode (INSERT, VISUAL, etc.) in status bar
+set showmode
+" Keep 5 lines visible above/below cursor when scrolling
+set so=5
+" Show search matches as you type the search pattern
+set incsearch
+" Show line numbers
+set nu
+
+
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
@@ -70,9 +80,8 @@ nmap Y y$
 "nmap H <Action>(PreviousTab)
 
 
-
 " Jetbrains commands {{{1
-nmap / :action Find<CR>
+" nmap / :action Find<CR>
 nmap <leader><space> :action ChooseRunConfiguration<CR>
 nmap <leader>d :action ChooseDebugConfiguration<CR>
 nmap <leader><a-char-62> :action Resume<CR>
@@ -120,6 +129,14 @@ nmap <leader>] <Action>(copilot.cycleNextInlays)
 nmap <leader>[ <Action>(copilot.cyclePrevInlays)
 nmap <leader>c <Action>(copilot.openCopilot)
 " 1}}}
+
+" Run (visual selected) selected code in python console
+vmap <leader>l :action ExecuteInPyConsoleAction<CR>
+" Run line in python console
+nmap <leader>l :action ExecuteInPyConsoleAction<CR>
+
+
+
 
 " zo: Open one fold under the cursor. When a count is given, that many folds deep will be opened.
 nmap zo zo

@@ -28,4 +28,5 @@ alias gra='git remote add'
 
 alias gp='git push'
 alias gpt="gp --tags"
+alias gpf='gp --force-with-lease'
 
